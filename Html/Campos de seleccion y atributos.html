@@ -1,0 +1,35 @@
+<form action="">
+    <fieldset><!-- Permite meter varios campos dentro de un contenedor-->
+        <div>
+            <label for="nombre">Ingrese su nombre</label><!-- El atributo for conecta el label con el input-->
+            <input name="name" id="nombre" type="text" value="val"><!-- El type determina la entrada para el input -->
+            <!-- name me permite indentificar el input-->
+            <!-- el atributo value me permite guardar la informacion de cada campo-->
+        </div>      
+          <div>
+            <label >
+                Ingrese su contraseña
+              <input name="password" type="password" required>
+              <!-- required permite hacer obligatorio un campo-->
+              <!-- Readonly permite no modificar-->
+            </label><!-- Otra forma de conectar el label con input-->
+          </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Tus pasatiempos</legend>
+        <label> <input type="checkbox"></label>
+        <select name="country" id="country"><!-- Select es una lista de opciones-->
+           <optgroup label="America"><!-- Me permite agrupar opciones-->
+              <option value="Perú">peru</option><!-- elementos de la lista-->
+              <option value="Colombia">Colombia</option>
+              <option value="venezuela">Venezuela</option>
+           </optgroup>
+            
+        </select>
+        <textarea name="mensaje" id="ms" cols="30" rows="10">
+            <!-- Para ingresar texto largo -->
+        </textarea>
+
+    </fieldset>
+</form>
