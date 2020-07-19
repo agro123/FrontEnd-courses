@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta  charset="UTF-8">
+  <title>imagenes</title>  
+</head>
+<body>
+    <img src="ruta.jpg" 
+    srcset="ruta/de/imagen.jpg 1.5x, ruta/de/imagen2.jpg 2x" 
+    alt="descripcion">
+    <!--  Configura el viewport dependiendo del dispositivo donde se ejecute
+        Tambien se puede con el tamaño de pantalla
+    -->
+    <img src="ruta.jpg" 
+    srcset="ruta/de/imagen.jpg 500w, ruta/de/imagen2.jpg 800w" 
+    alt="descripcion">
+    <picture>
+        <source srcset="img.jpg" media="(min-width:500px)">
+        <source srcset="img2.jpg" media="(min-width:800px)">
+        <img src="img3.jpg" alt="">
+    </picture>
+    <!--  dependiendo del tamaño de pantalla escoge una de las imagenes
+     es como un if -->
+</body>
+</html>
