@@ -1,0 +1,28 @@
+:root { /*declarar variables */
+    --color:  rgb(4, 127, 199);
+}
+body {
+    background: var(--color); 
+    margin: 100px; 
+}
+.tittle {
+    font-size: 4rem;
+    color: var(--color);
+    font-weight: normal;
+    background-color: rgb(255, 255, 255);
+}
+.descripcion {
+    font-size: 2rem;
+    color:var(--color);
+    font-weight: normal;
+    margin: 50px; 
+    background-color: rgb(0, 255, 255);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.center{
+    text-align: center;
+}
