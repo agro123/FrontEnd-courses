@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+ <html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Una descripcion de la pagina">
+    <tittle>Tablas</tittle>
+</head>
+<body>
+    <table>
+        <caption>Horario de clases</caption><!-- Titulo de la tabla -->
+        <colgroup> <!-- Coldgroup me permite navegar por las columnas de la tabla-->
+            <col> <!-- debe de haber un col por cada columna o agregar un span -->
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead><!-- Encabezado -->
+        <tr><!-- Fila -->
+            <td>Lunes</td><!-- Celda -->
+            <td>Martes</td>
+            <td>Miercoles</td>
+            <td>Jueves</td>
+            <td>Viernes</td>
+        </tr>
+    </thead>
+    <tbody> <!-- cuerpo -->
+        <tr><!-- Fila -->
+            <td>html</td><!-- Celda -->
+            <td>css</td>
+            <td rowspan="2">react</td><!-- rowspan es el numero de filas que va ocupar esa celda -->
+            <td>el resto</td>
+            <td>El otro resto</td>
+        </tr>
+        <tr><!-- Fila -->
+            <td span="2">hi</td><!-- span es el numero de columnas que va ocupar esa celda -->
+        </tr>
+    </tbody>
+    <tfoot><!-- Conclusiones, descripcion, etc-->
+        <tr><!-- Fila -->
+            <td>1</td><!-- Celda -->
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+
+    </tfoot>
+    </table>
+</body>
+</html>
