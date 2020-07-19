@@ -1,0 +1,15 @@
+:root { /*declarar variables */
+    --color:  rgb(4, 127, 199);
+}
+
+
+body {
+    background: var(--color); 
+    margin: 100px;
+    color: white; 
+}
+
+h1 {
+    color: var(--color);
+    background: white;
+}
