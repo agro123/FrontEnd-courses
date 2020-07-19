@@ -10,6 +10,17 @@ body {
 }
 
 h1 {
+    font-size: 1rem;
     color: var(--color);
     background: white;
+    font-weight: normal;
+}
+p {
+    font-size: 1rem;
+    color: var(--color);
+    background: white;
+    font-weight: normal;
+}
+body {
+    margin: 0;
 }
