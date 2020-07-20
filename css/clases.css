@@ -12,6 +12,12 @@ body {
     font-weight: normal;
     background-color: rgb(255, 255, 255);
 }
+.list-item {
+    background-color: rgb(255, 255, 255);
+    font-size: 2em;
+    color: red;
+    font-weight: normal;
+}
 
 .bold {
     font-weight: bold;
@@ -20,3 +26,12 @@ body {
 .center{
     text-align: center;
 }
+
+li > ul{ /*todo ul que sea hijo de li*/
+    display: none;
+}
+
+/*Elementos .list .tag significa que tag es descendiente de list
+no es recomendable hacer esto */
+/*Elementos .list.tag significa que tiene las dos clases
+cualquier tag que tenga la clase list*/
