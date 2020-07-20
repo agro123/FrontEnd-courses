@@ -1,22 +1,30 @@
-* , *::before, *::after {
-  box-sizing: border-box;
+p {
+ width: 500px;
 }
-/* @font-face{
-  font-family: nombre;
-  font-style: value;
-  font-weight: value;
-  src: local(font), url('path') format('woff2');
-} */
 
-:root { /*declarar variables */
-    --color:  rgb(255, 255, 255);
+p::first-line {
+  color: red;
 }
-body {
-    background-color: var(--color);
-    font-size: 8em;
-   
-   /* Las ultimas se cargan si no estan disponibles las primeras */
-   font-family: verdana,'Ranchers', serif;
-    font-weight: 600;/* Me permite determinar el grosor de la fuente */
-    /* font-style: ; *//* Estilo de la tipografia */
+
+p:last-child::first-letter {
+  color: blue;
+}
+
+h1::before{/* Me permiten imprimir con css */
+  content: '¿'
+}
+h1::after {
+  content: '?'
+}
+
+blockquote {
+  quotes: '\201' '\201D'
+}
+
+blockquote::before{
+  content: open-quote;
+}
+
+blockquote::after {
+  content: close-quote;
 }
