@@ -1,51 +1,22 @@
 * , *::before, *::after {
   box-sizing: border-box;
 }
-
+/* @font-face{
+  font-family: nombre;
+  font-style: value;
+  font-weight: value;
+  src: local(font), url('path') format('woff2');
+} */
 
 :root { /*declarar variables */
     --color:  rgb(255, 255, 255);
 }
 body {
     background-color: var(--color);
-}
-h1 {
-font-size: 4em;/* em es tamaño de fuente respecto a la raiz 1em=16px */
-}
-
-span {
-  font-size: .5em;/* aqui la raiz es h1 por la tanto 1em=64px */
-  color: red;
-}
-
-h2 {
-  font-size: 5rem;/* rem no depende de la raiz, no cambia  1rem=16bits*/
-  text-align: center;
-  text-shadow: 2px 2px 2px #444;
-}
-
-p {
-  width: 200px;/*  */
-  text-indent: 2em; /* me permite correr el texto */
-  text-align: center; /* Nos permite acomodar el texto el texto */
-  /* text-align-last: left; *//* Permite alinear la ultima linea del texto */
-  line-height: 1.5; /* la altura de lineas */
-  vertical-align: center;
-  letter-spacing: 0.02em;/*espacio entre las letras */
-  /* word-spacing: 0.002em; */
-  /* text-decoration-line: line-through;
-  text-decoration-color: red;
-  text-decoration-style: double; */
-/* Me permite de agregar diferentes elementos al texto */
-  /* text-decoration: underline line-through overline; */
-/* white-space: pre; muestra tal cual el texto*/
-/* word-break: break-all; rompe la palabra que se exceda del tamaño del contenedor*/
-overflow: hidden; /* Evita que se desborde el texto */
-text-overflow: ellipsis; 
-
-/* writing-mode: vertical-lr; *//* Para texto vertical */
-/* text-orientation: upright; */
-
-text-transform: uppercase;/* Caracteristicas del texto*/
-
+    font-size: 8em;
+   
+   /* Las ultimas se cargan si no estan disponibles las primeras */
+   font-family: verdana,'Ranchers', serif;
+    font-weight: 600;/* Me permite determinar el grosor de la fuente */
+    /* font-style: ; *//* Estilo de la tipografia */
 }
