@@ -6,12 +6,17 @@ body {
     margin: 100px; 
 }
 
-p {
-    color: red;
+h1 {
+ font-size: 3em;
+    background: yellow;
+    height: 101px;
+    width: 200px;
+  
 }
 
-a { /*inherit permite que 
-    elementos hijos hereden caracteristicas de los padres*/
-    color: inherit;
+span {
+    background: yellow;
+    display: inline-block;
+    height: 101px;
+    width: 200px;
 }
-/*initial devuelve a su estado original los elementos*/
