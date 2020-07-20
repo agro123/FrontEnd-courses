@@ -5,9 +5,43 @@ body {
     background: var(--color); 
     margin: 100px; 
 }
-.hermano-mayor + .hermano{ /* va encontrar al que este junto al hermano mayor*/
-    background: yellowgreen;
+[type="email"] { /*Selectores de atributo*/
+    border: 1px solid blueviolet;
+
 }
-.hermano-mayor ~ .hermano{ /* va encontrar a todos*/
-    background: yellowgreen;
+
+[type="submit"] {
+    background: blueviolet;
+    color: cornsilk;
+    border: cornsilk;
+}
+[required]{
+    border: 2px  solid red;
+    margin: 1em;
+}
+a {
+    color: white;
+}
+[href^="/"], /*ATRIBUTOS QUE EMPIEZAN CON*/
+[href^="https://www.youtube.com"] {
+    color: red;
+}
+
+[href$=".png"] /*ATRIBUTOS QUE TERMINAN CON*/
+{
+    color: red;
+}
+
+[class*="button-"] {/*ATRIBUTOS QUE CONTENGAN*/
+    display: inline-block;
+    margin: 1em;
+    padding: 1em 2em;  
+}
+
+.button-cta {
+    background-color: green;
+}
+
+.button-alert {
+    background-color: red;
 }
