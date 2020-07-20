@@ -5,33 +5,9 @@ body {
     background: var(--color); 
     margin: 100px; 
 }
-.tittle, /* SELECTOR AGRUPADO*/
-.descripcion {
-    font-size: 4rem;
-    color: var(--color);
-    font-weight: normal;
-    background-color: rgb(255, 255, 255);
+.hermano-mayor + .hermano{ /* va encontrar al que este junto al hermano mayor*/
+    background: yellowgreen;
 }
-.list-item {
-    background-color: rgb(255, 255, 255);
-    font-size: 2em;
-    color: red;
-    font-weight: normal;
+.hermano-mayor ~ .hermano{ /* va encontrar a todos*/
+    background: yellowgreen;
 }
-
-.bold {
-    font-weight: bold;
-}
-
-.center{
-    text-align: center;
-}
-
-li > ul{ /*todo ul que sea hijo de li*/
-    display: none;
-}
-
-/*Elementos .list .tag significa que tag es descendiente de list
-no es recomendable hacer esto */
-/*Elementos .list.tag significa que tiene las dos clases
-cualquier tag que tenga la clase list*/
