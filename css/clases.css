@@ -2,29 +2,29 @@ p {
  width: 500px;
 }
 
-p::first-line {
-  color: red;
+
+.cop::before{
+  content: "$ "
 }
 
-p:last-child::first-letter {
-  color: blue;
+.pen::before{
+  content: "S/ "
 }
 
-h1::before{/* Me permiten imprimir con css */
-  content: '¿'
-}
-h1::after {
-  content: '?'
+.usd::before {
+   content: "$ "
 }
 
-blockquote {
-  quotes: '\201' '\201D'
+p::after {
+  content: '';
+  display: block;
+  height: 3px;
+  background: red;
+  transform: scale(2,1);
+  transform-origin: center left;
+  transition: transform .25s;
 }
 
-blockquote::before{
-  content: open-quote;
-}
-
-blockquote::after {
-  content: close-quote;
+p:hover::after {
+  transform: scale(1,1);
 }
