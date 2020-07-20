@@ -7,34 +7,24 @@
     --color:  rgb(4, 127, 199);
 }
 body {
-    background: var(--color); 
-    margin: 100px; 
+    background-color: var(--color);
+    background-image: url(Imagen7.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right top;
 }
 
 .box {
-    width: 300px;
-    height: 300px;
-    background: red; 
-    margin: 100px auto;
-    border: 10px dotted black;
-    
-    /* border-style: solid; */
-    border-color: black;
-    /* border-top-style: solid;
-    border-right-style: dotted;
-    border-bottom-style: dashed;
-    border-left-style: double; */
-    /* border-style: solid dotted dashed double;
-   border-color: blue yellow green white;
-   border-width: 10px;
-   border:150px solid;
-   border-color: blue transparent transparent;/* Un triangulo */ 
-/*    border-radius: 100px 50px 70px 300px;
-   border-top-left-radius: 100px;
-   border-top-right-radius: 50px;
-   border-bottom-left-radius: 60px;
-   border-bottom-right-radius: 70px; */
-
-   box-shadow: 50px 50px 10px 100px rgba(0, 0,0, .5) inset; /* x y blur tamño color */
-      /* Inset permite que la sombra se dibuje por dentro */         
+  width: 500px;
+  height: 500px;
+  background: yellow;
+  background-repeat: no-repeat ;
+  margin: 100px auto;
+  background-image: url(Imagen7.png);
+  background-position: center;
+  background-size: contain;
+  /* contain: ocupa mayor tamaño posible */
+    /* cover: rellena  la caja con la imagen */
 }
+
