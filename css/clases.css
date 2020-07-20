@@ -6,17 +6,34 @@ body {
     margin: 100px; 
 }
 
-h1 {
- font-size: 3em;
+[class^="box-"] {
+    font-size: 1em;
     background: yellow;
-    height: 101px;
-    width: 200px;
-  
+
+    /*Box Model*/
+    height: 50 px;
+    width:  30px;
+    padding: 50px; /*separacion entre el contenido y el limite interno*/
+    border: 20px solid black;
+    /* margin: 50px; */ /*separacion entre el contenido y el limite externo*/
+    float: left;
+    /*Box sizing*/
+    /* box-sizing: border-box; */ /*Dependiendo del xxxx-box se determina el tamaño de la caja*/
 }
 
-span {
-    background: yellow;
-    display: inline-block;
-    height: 101px;
-    width: 200px;
+
+.box-1 {
+    /* margin-top: 50px; */
+    margin : 50px 100px 200px 30px;/*4 valores en cada lado  */
+    /* 3 valores significa que la izquierda se iguala a la derecha */
+    /* 1 valor se aplica a todos los lados */
+    /* 2 valores se ubican en coordenada y y x  */
+}
+/* Tambien es posible aplicar Margenes negativos*/
+.container {
+    width: 600px;
+    height: 200px;
+    background: white;
+    margin-left: auto;/* Me permite centrar un elemento */
+    margin-right: auto;
 }
