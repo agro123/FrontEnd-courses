@@ -1,0 +1,54 @@
+CONTAINER
+display: flex;        /* Activar flex
+         flex 
+         inline-flex 
+         none*/
+
+flex-direction: column; /*Cambia la direccion del eje principal
+                column-reverse; */ invierte los ejes
+                row-reverse; */ invierte la direcciond el main 
+
+flex-wrap: wrap;/* Permite que los item no se escapen del contenedor y no se compriman */
+           wrap-reverse; /*Invierte la direccion del cross
+flex-flow: direction wrap; ---Shorthand ---      
+
+justify-content: Alinea los items en el eje principal (main axis)
+                 flex-end; ubica el contenido al final
+                 center;  se centran respecto al eje principal
+                 space-around; se genera un espacio alrededor
+                 space-between;  genera un espacio entre los items 
+
+align-items:      Alinea los items en el eje secundario (cross axis) dentro de la linea
+            center; se centran respecto al contenedor
+            flex-end; van al final
+            strecth;  ocupan toda la altura que pueden tomar
+            baseline; alinea a la altura del contenido
+
+align-content: Alinea las lineas respecto al container
+              flex-end;
+              center;
+              flex-start;
+              space-around;
+              space-between;
+-----------------------------------------------------------------------------------------------------
+ITEMS
+flex-grow: enteros y decimales; Indica el factor de crecimiento
+
+flex-shrink: enteros y decimales; Indica el factor de reduccion
+
+flex-basis: entero y decimales; Permite que modificar el grosor de un item.
+
+flex: flex-grow flex-shrink flex-basis; Shorthand
+      initial; (0 1 auto)
+      auto;    (1 1 auto)
+      none;    (0 0 auto)
+      n;       (n 0 0); n=Z+
+
+Alinear un unico elemento.
+align-self: auto | flex-start | flex-end | center | baseline | stretch
+
+order: entero; permite cambiar de posicion un elemento.
+ 
+
+      
+                        

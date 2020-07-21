@@ -1,23 +1,32 @@
 body {
-    font-size: 4rem;
+    display: flex; 
+    min-height: 100vh;/* vh = view port */
+    border: 2px solid rgb(3, 3, 3);
+
 }
 
-.flex-container {
-    display: inline-flex; /* Activar flex
-    flex 
-    inline-flex */
-    border: 1px solid black;
-    /* background: blue; */
-    flex-direction: row; 
-    /* flex-direction: column-reverse; */
-   /*  flex-direction: row-reverse; */
-   flex-wrap: wrap;
-}
-.flex-item {
-    border: 1px solid blue;
-    margin: 1rem;
+.card {
+    width: 50%;
+  border: 2px solid red;
+  margin: auto;
+  position: relative;
 }
 
-.button {
+.card--imagen {  
+    width: 100%;
+}
+
+.card--title {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    color: white;
+    background: rgb(0,0, 0, 0.7);
+
 }
