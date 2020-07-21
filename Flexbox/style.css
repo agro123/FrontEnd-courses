@@ -1,0 +1,23 @@
+body {
+    font-size: 4rem;
+}
+
+.flex-container {
+    display: inline-flex; /* Activar flex
+    flex 
+    inline-flex */
+    border: 1px solid black;
+    /* background: blue; */
+    flex-direction: row; 
+    /* flex-direction: column-reverse; */
+   /*  flex-direction: row-reverse; */
+   flex-wrap: wrap;
+}
+.flex-item {
+    border: 1px solid blue;
+    margin: 1rem;
+}
+
+.button {
+    display: flex;
+}
