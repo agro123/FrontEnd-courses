@@ -3,43 +3,31 @@
 }
 
 body {
-
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;/* vh = view port */
     border: 2px solid rgb(3, 3, 3);
-
+  
 }
-/* Reset UL */
-.menu {
+
+header {  
+    background: tomato;
+}
+main {
+    background: rgb(255, 175, 71);
     
-    list-style: none;
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0px;
-    margin: 1px solid black;
-    width: 10%;
-    background: rgb(189, 189, 189);
+    flex:1;
 }
-
-a {
-    text-decoration: none;
-    color: white;
-    display: block;
+aside {
+    background: rgb(255, 227, 71);
+    width: 25%;
+    order: -1;
 }
- .menu-item {
-     padding: .5em 1em; 
-     border: 1px solid white;
-
- }
- .menu-item:hover {
-     background: yellowgreen;
- }
-
-@media screen and (min-width: 960px) {
-    .menu{
-        display: flex;
-        width:50%;    
-    }
-    .menu-item {
-       flex: 1;
-    }
+footer {
+    background: rgb(252, 255, 71);
+}
+.principal {
+    display: flex; 
+    border: 2px solid black;
+    flex: 1;
 }
